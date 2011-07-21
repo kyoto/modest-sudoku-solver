@@ -6,6 +6,7 @@ module Sudoku
     attr_reader :grid
 
     def initialize(grid, strategy = nil)
+      raise "grid must be a 9x9 matrix" if grid.length != 9 || grid.detect {|row| row.length != 9}
       @grid = grid.map {|row|
         row.map {|cell|
           raise "Invalid value '#{cell}' (expected integer from 1 to 9 or nil)" unless (1..9) === cell || cell.nil?
