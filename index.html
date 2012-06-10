@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Modest Sudoku Solver by kyoto</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Modest Sudoku Solver</h1>
+        <p>Sudoku Solver for Minimalists</p>
+        <p class="view"><a href="https://github.com/kyoto/modest-sudoku-solver">View the Project on GitHub <small>kyoto/modest-sudoku-solver</small></a></p>
+        <ul>
+          <li><a href="https://github.com/kyoto/modest-sudoku-solver/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/kyoto/modest-sudoku-solver/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/kyoto/modest-sudoku-solver">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Modest Sudoku Solver</h1>
+
+<p>A minimalist sudoku solver in Ruby with an emphasis on clean code over efficiency.</p>
+
+<p>Demo: <a href="http://andypickering.com/sudoku">http://andypickering.com/sudoku</a></p>
+
+<h2>Usage</h2>
+
+<pre><code>grid = [[  4,   9, nil, nil, nil, nil, nil, nil,   7],
+        [nil, nil, nil,   1, nil, nil, nil, nil, nil],
+        [nil, nil,   5,   4,   3, nil, nil, nil, nil],
+        [  1, nil, nil, nil,   6, nil, nil,   4,   2],
+        [  5, nil, nil,   2, nil, nil, nil, nil, nil],
+        [nil, nil, nil,   7, nil, nil, nil, nil, nil],
+        [  6,   2, nil, nil, nil,   5,   7, nil,   4],
+        [nil, nil,   1, nil, nil, nil, nil,   2,   9],
+        [nil,   4,   9, nil,   2, nil,   6, nil, nil]]
+
+solution = Sudoku::Game.new(grid).solution
+
+solution.to_s
+  # =&gt; [[4, 9, 6, 8, 5, 2, 3, 1, 7],
+  #     [2, 7, 3, 1, 9, 6, 4, 8, 5],
+  #     [8, 1, 5, 4, 3, 7, 2, 9, 6],
+  #     [1, 8, 7, 5, 6, 3, 9, 4, 2],
+  #     [5, 6, 4, 2, 8, 9, 1, 7, 3],
+  #     [9, 3, 2, 7, 4, 1, 5, 6, 8],
+  #     [6, 2, 8, 9, 1, 5, 7, 3, 4],
+  #     [3, 5, 1, 6, 7, 4, 8, 2, 9],
+  #     [7, 4, 9, 3, 2, 8, 6, 5, 1]]
+</code></pre>
+
+<h2>License</h2>
+
+<h3>The MIT License (MIT)</h3>
+
+<p>Copyright (c) 2012 Andrew Pickering, andypickering.com</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/kyoto">kyoto</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-3245510-8");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
