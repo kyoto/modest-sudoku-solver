@@ -2,6 +2,8 @@
 
 A minimalist sudoku solver in Ruby with an emphasis on clean code over efficiency.
 
+Demo: http://andypickering.com/sudoku
+
 ## Usage
 
     grid = [[  4,   9, nil, nil, nil, nil, nil, nil,   7],
