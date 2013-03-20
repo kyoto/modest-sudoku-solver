@@ -7,12 +7,12 @@ module Sudoku
 
     def initialize(grid, strategy = nil)
       raise "grid must be a 9x9 matrix" if grid.length != 9 || grid.detect {|row| row.length != 9}
-      @grid = grid.map {|row|
-        row.map {|cell|
+      @grid = grid.map do |row|
+        row.map do |cell|
           raise "Invalid value '#{cell}' (expected integer from 1 to 9 or nil)" unless (1..9) === cell || cell.nil?
           cell.nil? ? (1..9).to_a : [cell]
-        }
-      }
+        end
+      end
       @strategy = strategy || Strategy::MostConstrainedCellStrategy.new
       @strategy.reduce_all!(@grid)
     end
@@ -31,10 +31,10 @@ module Sudoku
     end
 
     def to_s
-      @grid.map {|row|
+      @grid.map do |row|
         row.map {|cell| cell.length > 1 ? "."
                                         : cell.empty? ? "x" : cell.first}.join
-      }.join("\n")
+      end.join("\n")
     end
 
     def solved?
@@ -65,12 +65,12 @@ module Sudoku
         x, y = @strategy.next_cell(@grid)
 
         # Try each of the possible values for cell [x, y] and if one leads to a solution, return that solution
-        self[x, y].each {|val|
+        self[x, y].each do |val|
           next_game = self.clone
           next_game[x, y] = val
           next_solution = next_game.solve
           return next_solution unless next_solution.nil?
-        }
+        end
 
         # No solution found
         nil
