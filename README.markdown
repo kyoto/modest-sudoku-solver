@@ -1,8 +1,8 @@
 # Modest Sudoku Solver
 
-A minimalist sudoku solver in Ruby with an emphasis on clean code over efficiency.
+A minimalist Sudoku solver implemented in Ruby with an emphasis on clean code over efficiency.
 
-Demo: http://andypickering.com/sudoku
+Demo: http://andypickering.com/sudoku/
 
 ## Usage
 
